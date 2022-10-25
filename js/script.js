@@ -10,10 +10,15 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-            message: "L'inizio di Vue.js"
-            
+            message: "L'inizio di Vue.js",
+            foto: "",
+            secondMessage: ""
         }
     },
-    methods: {
+    methods:  {
+        greet: function(){
+            this.foto = `img/logo-napoli.png`
+            this.secondMessage = `Io tifo Napoli tiè 🤘`
+        }
     }
 }).mount("#app");
