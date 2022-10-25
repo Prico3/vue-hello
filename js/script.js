@@ -10,6 +10,8 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
+            message: "L'inizio di Vue.js"
+            
         }
     },
     methods: {
